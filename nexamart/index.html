@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover everyday essentials, electronics, fashion and home products at NexaMart."
+    />
+    <title>NexaMart | Everyday Shopping, Made Better</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- Announcement bar: scrolls normally -->
+      <div class="announcement-bar">
+        <p>
+          Welcome to NexaMart &bull; Free delivery on orders above ₦100,000.
+        </p>
+      </div>
+
+      <!-- Navigation: only this bar stays sticky -->
+      <header class="site-header">
+        <nav class="navbar">
+          <a href="#" class="logo" aria-label="NexaMart home"
+            >NexaMart<span>.</span></a
+          >
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+
+          <button
+            class="cart-button"
+            type="button"
+            aria-label="Open shopping cart"
+            aria-controls="cart-panel"
+            aria-expanded="false"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M3 3h2l2.4 11.4a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L22 7H6"
+              />
+              <circle cx="10" cy="20" r="1" />
+              <circle cx="18" cy="20" r="1" />
+            </svg>
+            <span class="cart-label">Cart</span>
+            <span class="cart-count">0</span>
+          </button>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero -->
+        <section class="hero">
+          <div class="hero-content">
+            <span class="eyebrow">YOUR EVERYDAY SHOPPING DESTINATION</span>
+            <h1>Good finds.<br /><span>Better living.</span></h1>
+            <p>
+              From everyday essentials to products you'll love, discover a
+              smarter way to shop with NexaMart.
+            </p>
+            <div class="hero-actions">
+              <a href="#shop" class="primary-button">Explore Products</a>
+              <a href="#categories" class="text-button"
+                >Browse Categories &rarr;</a
+              >
+            </div>
+
+            <div class="hero-highlights">
+              <div>
+                <strong>Curated</strong>
+                <span>Everyday finds</span>
+              </div>
+              <div>
+                <strong>Simple</strong>
+                <span>Shopping experience</span>
+              </div>
+              <div>
+                <strong>Secure*</strong>
+                <span>Checkout-ready design</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="images/hero-image.jpg"
+              alt="A carefully arranged selection of lifestyle products"
+            />
+            <div class="hero-image-note">
+              <span>THE NEXAMART EDIT</span>
+              <strong>Find your next favourite.</strong>
+            </div>
+          </div>
+        </section>
+
+        <!-- Benefits strip -->
+        <section class="benefits-strip" aria-label="Store highlights">
+          <div>
+            <span>01</span>
+            <p>Everyday essentials</p>
+          </div>
+          <div>
+            <span>02</span>
+            <p>Carefully selected finds</p>
+          </div>
+          <div>
+            <span>03</span>
+            <p>Simple shopping experience</p>
+          </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories section-container" id="categories">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">EXPLORE OUR STORE</span>
+              <h2>Shop by category</h2>
+              <p>Find what you need, all in one place.</p>
+            </div>
+            <a href="#shop" class="text-button">View products &rarr;</a>
+          </div>
+
+          <div class="category-grid">
+            <a href="#shop" class="category-card">
+              <img
+                src="images/electronics.jpg"
+                alt="Electronics collection"
+                loading="lazy"
+              />
+              <div class="category-overlay">
+                <span>01 / TECH</span>
+                <h3>Electronics</h3>
+                <span class="category-link">Explore &rarr;</span>
+              </div>
+            </a>
+
+            <a href="#shop" class="category-card">
+              <img
+                src="images/fashion.jpg"
+                alt="Fashion collection"
+                loading="lazy"
+              />
+              <div class="category-overlay">
+                <span>02 / STYLE</span>
+                <h3>Fashion</h3>
+                <span class="category-link">Explore &rarr;</span>
+              </div>
+            </a>
+
+            <a href="#shop" class="category-card">
+              <img
+                src="images/home.jpg"
+                alt="Home and living collection"
+                loading="lazy"
+              />
+              <div class="category-overlay">
+                <span>03 / LIVING</span>
+                <h3>Home &amp; Living</h3>
+                <span class="category-link">Explore &rarr;</span>
+              </div>
+            </a>
+
+            <a href="#shop" class="category-card">
+              <img
+                src="images/beauty.jpg"
+                alt="Beauty collection"
+                loading="lazy"
+              />
+              <div class="category-overlay">
+                <span>04 / CARE</span>
+                <h3>Beauty</h3>
+                <span class="category-link">Explore &rarr;</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Products -->
+        <section class="featured-products section-container" id="shop">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">THE GOOD FINDS</span>
+              <h2>Featured products</h2>
+              <p>A few things worth adding to your everyday.</p>
+            </div>
+            <span class="catalogue-label">Our collection</span>
+          </div>
+
+          <div class="product-toolbar">
+            <p class="product-results">
+              Showing <span class="product-result-count">0</span> products
+            </p>
+            <label class="sort-control">
+              Sort by
+              <select class="sort-select">
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: Low to high</option>
+                <option value="price-high">Price: High to low</option>
+                <option value="name">Name: A to Z</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="product-container"></div>
+        </section>
+
+        <!-- Promotional banner -->
+        <section class="promo-banner">
+          <div>
+            <span class="eyebrow">A BETTER WAY TO DISCOVER</span>
+            <h2>Make room for<br />something good.</h2>
+            <p>Explore practical finds for your everyday life.</p>
+            <a href="#shop" class="light-button">Shop the collection &rarr;</a>
+          </div>
+          <div class="promo-decoration" aria-hidden="true">
+            <span>N</span>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section class="about-section section-container" id="about">
+          <div class="about-mark" aria-hidden="true">N.</div>
+          <div class="about-content">
+            <span class="eyebrow">A LITTLE ABOUT US</span>
+            <h2>Everyday shopping,<br />without the fuss.</h2>
+            <p>
+              NexaMart is a shopping experience built around discovering useful
+              products across technology, fashion, home and beauty. Our goal is
+              to make browsing simple and enjoyable.
+            </p>
+            <a href="#shop" class="text-button">Discover NexaMart &rarr;</a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Full footer -->
+      <footer class="site-footer">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a href="#" class="footer-logo">NexaMart<span>.</span></a>
+            <p>
+              Everyday essentials, thoughtfully selected. Discover good finds
+              for a better everyday.
+            </p>
+            <span class="footer-note">A little something for every day.</span>
+          </div>
+
+          <div class="footer-column">
+            <h3>Shop</h3>
+            <ul>
+              <li><a href="#shop">All Products</a></li>
+              <li><a href="#categories">Electronics</a></li>
+              <li><a href="#categories">Fashion</a></li>
+              <li><a href="#categories">Home &amp; Living</a></li>
+              <li><a href="#categories">Beauty</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Customer Care</h3>
+            <ul>
+              <li><a href="#about">Contact Us</a></li>
+              <li><a href="#about">Delivery Information</a></li>
+              <li><a href="#about">Returns &amp; Refunds</a></li>
+              <li><a href="#about">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#about">Our Story</a></li>
+              <li><a href="#about">Why NexaMart</a></li>
+              <li><a href="#about">Privacy Policy</a></li>
+              <li><a href="#about">Terms &amp; Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span class="current-year"></span> NexaMart. All rights
+            reserved.
+          </p>
+          <p>Built with care. Designed for everyday living.</p>
+          <a href="#">Back to top &uarr;</a>
+        </div>
+      </footer>
+
+      <!-- Cart backdrop -->
+      <div class="cart-overlay"></div>
+
+      <!-- Shopping cart drawer -->
+      <aside
+        class="cart-panel"
+        id="cart-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="cart-title"
+        aria-hidden="true"
+        inert
+      >
+        <div class="cart-header">
+          <div>
+            <span class="eyebrow">YOUR SELECTION</span>
+            <h2 id="cart-title">
+              Your cart <span class="cart-heading-count">(0)</span>
+            </h2>
+          </div>
+          <button class="close-cart" type="button" aria-label="Close cart">
+            &times;
+          </button>
+        </div>
+
+        <div class="cart-items"></div>
+
+        <div class="cart-footer">
+          <div class="cart-subtotal-row">
+            <span>Subtotal</span>
+            <strong class="cart-total">₦0</strong>
+          </div>
+          <p class="cart-disclaimer">
+            Delivery costs, if applicable, are not included.
+          </p>
+          <button class="checkout-button" type="button" disabled>
+            Continue to checkout
+          </button>
+          <button class="continue-shopping" type="button">
+            Continue shopping
+          </button>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
